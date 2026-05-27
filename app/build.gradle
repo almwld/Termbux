@@ -40,6 +40,7 @@ android {
         implementation project(":termux-shared")
     implementation project(":terminal-emulator")
     implementation project(":terminal-emulator")
+    implementation project(":terminal-emulator")
     }
 
     defaultConfig {
