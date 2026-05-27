@@ -64,7 +64,7 @@ public final class TerminalRenderer {
         } catch (ArabicShapingException e) {
         }
         Bidi bidi = new Bidi();
-        bidi.setPara(text.toCharArray(), 0, null);
+        bidi.setPara(text, (byte)2, null);
         return bidi.writeReordered(Bidi.DO_MIRRORING | Bidi.KEEP_BASE_COMBINING);
     }
 
